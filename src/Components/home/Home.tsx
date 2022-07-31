@@ -1,4 +1,12 @@
 import "./Home.css"
+import data from "../../Translation/English/translation.json"
+import {addResources, translation} from "../../../src/i18n"
+
+addResources("en", "home", {
+    line1: data.english.line1,
+    line2: data.english.line2,
+    line3: data.english.line3,
+});
 
 export const Home = () => {
     return(
@@ -7,9 +15,9 @@ export const Home = () => {
             <button className="button1">Spanish</button>
             <button className="button1">French</button>
             <div className="paraStyle">
-                An exciting scientific endeavor is space flight. People can learn more than they normally could. <br/>
-                Space exploration is a study of the cosmos. There are many aspects of the universe that we do not fully understand. <br/>
-                Astronauts visit space and report back to us on their experiences there. <br/>
+                {translation("home", "line1")} <br/>
+                {translation("home", "line2")} <br/>
+                {translation("home", "line3")} <br/>
             </div>
             
         </div>
