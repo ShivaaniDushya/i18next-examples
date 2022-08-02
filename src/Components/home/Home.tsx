@@ -1,23 +1,27 @@
 import "./Home.css"
-import data from "../../Translation/English/translation.json"
-import {addResources, translation} from "../../../src/i18n"
-
-addResources("en", "home", {
-    line1: data.english.line1,
-    line2: data.english.line2,
-    line3: data.english.line3,
-});
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
+
+    const { t, i18n } = useTranslation();
+
+    const onClickLanguageChange = (e: any) => {
+        const language = e.target.value;
+        i18n.changeLanguage(language);
+    }
+
     return(
-        <div className="buttonStyle">
-            <button className="button1">English</button>
-            <button className="button1">Spanish</button>
-            <button className="button1">French</button>
+        <div className="align">
+        <select className="custom-select" style={{width: 200}} onChange={onClickLanguageChange}>
+        <option value="en" >English</option>
+        <option value="es" >Spanish</option>
+        <option value="fr" >French</option>
+        </select>
+
             <div className="paraStyle">
-                {translation("home", "line1")} <br/>
-                {translation("home", "line2")} <br/>
-                {translation("home", "line3")} <br/>
+                {t("line1")} <br/>
+                {t("line2")} <br/>
+                {t("line3")} <br/>
             </div>
             
         </div>

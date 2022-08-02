@@ -1,7 +1,5 @@
 {
-    "french": {
-        "line1": "Le vol spatial est une entreprise scientifique passionnante. Les gens peuvent apprendre plus qu'ils ne le pourraient normalement.",
-        "line2": "L'exploration spatiale est une étude du cosmos. Il y a de nombreux aspects de l'univers que nous ne comprenons pas entièrement.",
-        "line3": "Les astronautes visitent l'espace et nous rapportent leurs expériences là-bas."
-    }
+    "line1": "Le vol spatial est une entreprise scientifique passionnante. Les gens peuvent apprendre plus qu'ils ne le pourraient normalement.",
+    "line2": "L'exploration spatiale est une étude du cosmos. Il y a de nombreux aspects de l'univers que nous ne comprenons pas entièrement.",
+    "line3": "Les astronautes visitent l'espace et nous rapportent leurs expériences là-bas."
 }
