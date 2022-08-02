@@ -20,8 +20,8 @@ export const Home = () => {
 
             <div className="paraStyle">
                 {t("line1", {ns: ['main','home']})} <br/>
-                {t("line2")} <br/>
-                {t("line3")} <br/>
+                {t("line2", {ns: ['main','home']})} <br/>
+                {t("line3", {ns: ['main','home']})} <br/>
             </div>
             
         </div>
