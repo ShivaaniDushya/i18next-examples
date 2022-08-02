@@ -6,15 +6,33 @@ import translationEnglish from "./Translation/English/translation.json";
 import translationSpanish from "./Translation/Spanish/translation.json";
 import translationFrench from "./Translation/French/translation.json";
 
+//Import translation2 file
+import translationEnglishSecondFile from "./Translation/English/translation2.json";
+
+//---Using translation
+// const resources = {
+//     en: {
+//         translation: translationEnglish,
+//     },
+//     es: {
+//         translation: translationSpanish,
+//     },
+//     fr: {
+//         translation: translationFrench,
+//     },
+// }
+
+//---Using different namespaces
 const resources = {
     en: {
-        translation: translationEnglish,
+        home: translationEnglish,
+        main: translationEnglishSecondFile,
     },
     es: {
-        translation: translationSpanish,
+        home: translationSpanish,
     },
     fr: {
-        translation: translationFrench,
+        home: translationFrench,
     },
 }
 

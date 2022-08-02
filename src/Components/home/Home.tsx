@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export const Home = () => {
 
-    const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation(['home', 'main']);
 
     const onClickLanguageChange = (e: any) => {
         const language = e.target.value;
@@ -19,7 +19,7 @@ export const Home = () => {
         </select>
 
             <div className="paraStyle">
-                {t("line1")} <br/>
+                {t("line1", {ns: ['main','home']})} <br/>
                 {t("line2")} <br/>
                 {t("line3")} <br/>
             </div>
